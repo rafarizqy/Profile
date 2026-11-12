@@ -14,8 +14,9 @@ body {
     text-align: center; /* Menengahkan semua teks di dalam kartu */
 }
 
-/* PERBAIKAN: Ditambah tanda titik (.) di depan kartu-profil */
 .kartu-profil img {
-    width: 150px;
-    /* border-radius: 50%; -> Aktifkan baris ini jika fotomu ingin dibuat bulat sempurna */
+    width: 120px;       /* Lebar foto (bisa disesuaikan, misal 100px atau 120px) */
+    height: 150px;      /* Tinggi foto agar rasionya pas seperti pas foto */
+    object-fit: cover;  /* Menjaga agar foto tidak gepeng */
+    border-radius: 10px;/* Membuat sudut foto agak melengkung rapi (opsional) */
 }
