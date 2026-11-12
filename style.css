@@ -8,15 +8,58 @@ body {
     width: 300px;
     padding: 20px;
     background-color: white;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    margin: 50px auto; /* Menengahkan kartu di tengah halaman */
+    border-radius: 15px; /* Membuat sudut kartu menjadi melengkung */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan tipis */
     text-align: center; /* Menengahkan semua teks di dalam kartu */
 }
 
+/* Mengatur ukuran dan bentuk foto agar lonjong/oval persis seperti contoh */
 .kartu-profil img {
-    width: 120px;       /* Lebar foto (bisa disesuaikan, misal 100px atau 120px) */
-    height: 150px;      /* Tinggi foto agar rasionya pas seperti pas foto */
-    object-fit: cover;  /* Menjaga agar foto tidak gepeng */
-    border-radius: 10px;/* Membuat sudut foto agak melengkung rapi (opsional) */
+    width: 120px;         /* Lebar foto */
+    height: 160px;        /* Tinggi foto (membuatnya lonjong/oval vertikal) */
+    object-fit: cover;    /* Menjaga agar foto tidak gepeng */
+    border-radius: 50px;  /* Membuat sudut melengkung lonjong (oval) */
+    display: block;
+    margin: 0 auto 15px auto; /* Menengahkan foto di dalam kartu dengan jarak bawah 15px */
+}
+
+.kartu-profil h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.kartu-profil p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.kartu-profil a {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.kartu-profil a:hover {
+    text-decoration: underline;
+}
+
+.kartu-profil button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.kartu-profil button:hover {
+    background-color: #2e2e8a;
 }
